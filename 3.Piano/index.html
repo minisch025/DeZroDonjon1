@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piano</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            border: solid transparent 1px;
+        }
+        body{
+            background: #67701d;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .content span:hover{
+            opacity: 75%;
+            cursor: pointer;
+        }
+        .content{
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 40vh;
+            width: 90%;
+            top: 10em;
+            left: 10vh;
+            /* margin: 0 20vh; */
+        }
+        .touch{
+            width: 5em;
+            height: 15em;
+            background-color: #fff;
+            border: solid 2px #1d1e22;
+            border-radius: 3px;
+        }
+        .dieses{
+            display: flex;
+            position: relative;
+            justify-content: center;
+            align-items: center;
+            left: -38em;
+            top: -3.4em;
+        }
+        .diese-touchs{
+            position: absolute;
+            display: flex;
+        }
+        .diese{
+            margin: 0 10px;
+            width: 2.5em;
+            height: 20vh;
+            background-color: #1d1e22;
+            border-radius: 3px;
+            z-index: 1;
+        }
+        .diese-group{
+            display: flex;
+            margin-right: 3em;
+        }
+        .diese-group:last-child{
+            margin: 0;
+        }
+
+        @media (max-width:480px) {
+            .content{
+                transform: rotate(90deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <!-- J'sais pas vraiment si c'est necessaire un contener ici -->
+        <span class="touch"></span>
+        <span class="touch"></span>
+        <span class="touch"></span>
+        <span class="touch"></span>
+        <span class="touch"></span>
+        <span class="touch"></span>
+        <span class="touch"></span>
+        <span class="touch"></span>
+        <span class="touch"></span>
+        <span class="touch"></span>
+        <span class="touch"></span>
+        <span class="touch"></span>
+        <span class="touch"></span>
+        <span class="touch"></span>
+        <span class="touch"></span>
+        <span class="touch"></span>
+        <span class="touch"></span>
+        <span class="touch"></span>
+        <span class="touch"></span>
+        <span class="touch"></span>
+        <span class="touch"></span>
+        <!-- ...bref je continue -->
+    
+        <div class="dieses">
+            <div class="diese-touchs">
+                <div class="diese-group">
+                    <span class="diese"></span>
+                    <span class="diese"></span>
+                </div>
+                <div class="diese-group">
+                    <span class="diese"></span>
+                    <span class="diese"></span>
+                    <span class="diese"></span>
+                </div>
+                <div class="diese-group">
+                    <span class="diese"></span>
+                    <span class="diese"></span>
+                </div>
+                <div class="diese-group">
+                    <span class="diese"></span>
+                    <span class="diese"></span>
+                    <span class="diese"></span>
+                </div>
+                <div class="diese-group">
+                    <span class="diese"></span>
+                    <span class="diese"></span>
+                </div>
+                <div class="diese-group">
+                    <span class="diese"></span>
+                    <span class="diese"></span>
+                    <span class="diese"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
